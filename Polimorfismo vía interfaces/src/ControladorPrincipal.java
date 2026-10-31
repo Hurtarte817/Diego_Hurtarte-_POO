@@ -50,12 +50,12 @@ public class ControladorPrincipal {
                     vista.mostrarMensaje("\nNo se encontró ninguna integración con el ID: " + id);
                 }
                 break;
-            case 4: // <--- Caso añadido para registrar y agregar dinámicamente al modelo
+            case 4: 
                 AbstractIntegracion nueva = vista.solicitarNuevaIntegracion();
                 catalogo.agregarIntegracion(nueva);
                 vista.mostrarMensaje("\n¡Integración registrada y añadida al catálogo exitosamente!");
                 break;
-            case 5: // <--- Opción de salida
+            case 5: 
                 vista.mostrarMensaje("Saliendo del sistema...");
                 break;
             default:
